@@ -14,7 +14,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contentstack:schema:dry-run": "node --env-file=.env.local scripts/deploy-page-schema.mjs",
+    "contentstack:schema:apply": "node --env-file=.env.local scripts/deploy-page-schema.mjs --apply"
   },
   "dependencies": {
     "@contentstack/delivery-sdk": "^5.6.1",
